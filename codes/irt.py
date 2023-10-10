@@ -9,9 +9,20 @@ def nicetrips(p):
 
 from pyodide.ffi import create_proxy
 from js import document
+def process(inp):
+    if inp.isdigit():
+        perimeter = int(inp)
+        if perimeter%2 == 0:
+            output = nicetrips(perimeter)
+        else:
+            output = "No such triangle exists."
+    else:
+        output = "Invalid Entry."
+    return output
+
 @create_proxy
 def click(*args):
-    perimeter = int(document.getElementById('text').value)
-    document.getElementById('output').innerText = nicetrips(perimeter)
+    _input = document.getElementById('text').value
+    document.getElementById('output').innerText = process(_input)
 document.getElementById('click').addEventListener('click',click)
 
