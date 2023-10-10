@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Integer Right Triangles</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body style="background-color: black;">
+    <div style="background-color: purple;">
+      <h1 style="color: white;">Enter the perimeter</h1>
+      <p style="color: white;">Enter the perimeter to get all the possible integer right triangles.</p>
+      <center>
+        <textarea name="input_text" id="text" placeholder="perimeter"></textarea>
+        <button type="button" id="click">Show IRT</button>
+      </center>
+      <br>
+    </div>
+    <br>
+    <br>
+    <div style="background-color: purple;">
+      <h1 style="color: white;">Result:</h1>
+      <p style="color: white;" id="output"></p>
+      <br>
+    </div>
+    <py-script src='./irt.py'></py-script>
+  </body>
+</html>
