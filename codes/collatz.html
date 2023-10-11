@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Collatz Sequence</title>
+    <style>
+    </style>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body style="background-color: black;">
+    <div style="background-color: purple;">
+      <h1 style="color: white;">Enter initial number</h1>
+      <p style="color: white;">Enter initial number for collatz sequence.</p>
+      <br>
+      <center>
+        <input name="initial_num" id="initial_num" placeholder="Initial Number"></input>
+        <button type="button" id="click">Show seq</button>
+      </center>
+      <br>
+    </div>
+    <br>
+    <br>
+    <div style="background-color: purple;">
+      <h1 style="color: white;">Result:</h1>
+      <center><p style="color: white;" id="output"></p></center>
+      <center><b><p style="color: white;" id="len"></p></b></center>
+      <br>
+    </div>
+    <py-script src="./collatz.py"></py-script>
+  </body>
+</html>
