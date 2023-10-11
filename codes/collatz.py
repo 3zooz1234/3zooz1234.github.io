@@ -27,6 +27,7 @@ def click(*args):
         length = "Length = " + str(program(initial_num)[1])
     else:
         output = "Invalid Entry."
+        length = ""
     document.getElementById('output').innerText = output
     document.getElementById('len').innerText = length
 
