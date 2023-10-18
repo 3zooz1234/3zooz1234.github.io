@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Euler Number</title>
+    <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+    <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+  </head>
+  <body style="background-color: black;">
+    <div style="background-color: purple;">
+      <h1 style="color: white;">Enter an accuracy</h1>
+      <p style="color: white;">The program will print out the Euler's number within the accuracy you require.</p>
+      <center>
+        <input name="err" id="err" placeholder="accuracy between 1 to 10^{-16}"></input>
+        <button type="button" id="click">Show e</button>
+      </center>
+      <br>
+    </div>
+    <br>
+    <br>
+    <div style="background-color: purple;">
+      <h1 style="color: white;">Result:</h1>
+      <center><p style="color: white; font-size: 3ex;" id="output"></p></center>
+      <br>
+    </div>
+    <py-script src='./euler_num.py'></py-script>
+  </body>
+</html>
