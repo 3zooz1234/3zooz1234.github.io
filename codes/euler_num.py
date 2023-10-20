@@ -8,15 +8,16 @@ def isfloat(st):
         return False
 
 def euler_num(error):
+    k = 2
     def seq(n):
         return (1+(0.5)**n)**(2**n)
 
     if isfloat(error) or error.isdigit():
         error = float(error)
-        if error < 10**(-16):
-            output = "Error must be positive and not less than 10^-16."
+        if error < 5*10**(-16):
+            output = "Error must be positive and not less than 5x10^-16"
         elif error <= 1:
-            num = int(2-log(error/abs(seq(1)-seq(2)),2))
+            num = int(2-log(error*(k-1)/2*k*3**(k-1/k)*abs(seq(1)-seq(2)),k))
             output = f"e ~ {str(seq(num))}"
         else:
             output = "Error is too large; it must be less than 1."
